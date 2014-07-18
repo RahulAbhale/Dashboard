@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="css/style.css" rel="stylesheet">
+    <script>
+        function clickfunction(obj) {
+            elements = document.getElementsByClassName('leftpanel_slides');
+            for (var i = 0; i < elements.length; i++) {
+                elements[i].style.backgroundColor = '#Ff9223';
+            }
+            obj.style.backgroundColor = '#FFAA23';
+        }
+
+    </script>
+    <script type="text/javascript">
+
+        function toggleDiv(option) {
+            switch (option) {
+                case "myclickedgames":
+                    document.getElementById('info_content').style.display = 'none';
+                    document.getElementById('myclickedgames').style.display = 'block';
+                    document.getElementById('Decks_content').style.display = 'none';
+                    break;
+                case "Decks_content":
+                    document.getElementById('info_content').style.display = 'none';
+                    document.getElementById('myclickedgames').style.display = 'none';
+                    document.getElementById('Decks_content').style.display = 'block';
+                    break;
+                default :
+                    document.getElementById('info_content').style.display = 'block';
+                    document.getElementById('myclickedgames').style.display = 'none';
+                    document.getElementById('Decks_content').style.display = 'none';
+                    break;
+            }
+        }
+    </script>
+    <style>
+        #popUpDiv {
+            top: 17% !important;
+        }
+    </style>
+</head>
+<body>
+<div class="dashboardwrapper">
+    <div class="left_panel" id="left_panel">
+        <div class="dasshboardlogo">
+            <img src="css/ptotemylogo.png"/>
+        </div>
+        <div class="slides_Panel">
+            <div class="leftpanel_slides" onclick='clickfunction(this); toggleDiv("info_content");'>
+                <div class="slideText">Info</div>
+            </div>
+            <div class="leftpanel_slides" onclick='clickfunction(this); toggleDiv("myclickedgames");'>
+                <div class="slideText">Games</div>
+            </div>
+            <div id="decks" class="leftpanel_slides" onclick='clickfunction(this); toggleDiv("Decks_content");'>
+                <div class="slideText">Decks</div>
+            </div>
+            <div id="questions" class="leftpanel_slides" onclick='clickfunction(this);'>
+                <div class="slideText">Questions</div>
+            </div>
+            <div id="mygames" class="leftpanel_slides" onclick='clickfunction(this)'>
+                <div class="slideText">My Games</div>
+            </div>
+        </div>
+    </div>
+    <div class="right_panel">
+        <div class="login-box">
+            <label style="font-size:14px;margin-right:3px;position: relative;">Welcome, Rahul</label>
+            <input type="button" value="signout"/>
+        </div>
+        <div id="right_Panel_Content" class="rightPanelContent">
+            <div id="info_content" class="info_content inner_right_panel_content" style="display:block;">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum.<br/><br/>Contrary to popular belief,
+                Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC,
+                making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in
+                Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and
+                going through the
+                cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from
+                sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by
+                Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the
+                Renaissance.
+                The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+            </div>
+            <div id="myclickedgames" class="games_content inner_right_panel_content" style="display:none;">
+                <div class="thumbnail_div">
+                    <div class="games_inner_thumbnail">
+                        <div class="inner_thumbnail_img">
+                            <span>Tower Game</span>
+                        </div>
+                        <div onclick="popup('popUpDiv')" class="info_button">
+                            <div class="button_Text">Info</div>
+                        </div>
+                        <div class="use_button">
+                            <div class="button_Text">Use</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="thumbnail_div">
+                    <div class="games_inner_thumbnail">
+                        <div class="inner_thumbnail_img">
+                            <span>Functions</span>
+                        </div>
+                        <div onclick="popup('popUpDiv')" class="info_button">
+                            <div class="button_Text">Info</div>
+                        </div>
+                        <div class="use_button">
+                            <div class="button_Text">Use</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Decks_content" class="Decks_content" style="display:none;">
+                <input type="text" placeholder="Search"
+                       style="font-family: segoe-ui;font-size:12px;width:350px;height:20px;padding-left:5px;margin-left: 10px;"
+                       autofocus/>
+
+                <div class="aligndeckthumbs">
+                    <div class="deck_inner_thumbnail" style="border-style: none; ">
+                        <div class="deck_inner_thumbnail_img">
+                        </div>
+                        <div class="divText">Add Deck</div>
+                    </div>
+                    <div class="deck_inner_thumbnail" style="border-style: none; ">
+                        <div class="deck_inner_thumbnail_img">
+                        </div>
+                        <div class="divText">Deck-1</div>
+                    </div>
+                </div>
+            </div>
+            <div class="Question_content" style="display:none;">
+                <input type="text" placeholder="Search"
+                       style="font-family: segoe-ui;font-size:12px;width:350px;height:20px;padding-left:5px;margin-left: 10px;"
+                       autofocus/>
+
+                <div class="aligndeckthumbs">
+                    <div class="deck_inner_thumbnail" style="border-style: none; ">
+                        <div class="deck_inner_thumbnail_img">
+                        </div>
+                        <div class="divText">Add Question</div>
+                    </div>
+                    <div class="deck_inner_thumbnail" style="border-style: none; ">
+                        <div class="deck_inner_thumbnail_img">
+                        </div>
+                        <div class="divText">Pharma Question Bank</div>
+                    </div>
+                </div>
+            </div>
+            <div class="MyGames_content" style="display:none;">
+                <div class="" style="text-align: center;margin-top: 20%">
+                    You have not created any game. click on deck to create game.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="blanket" style="display:block;"></div>
+    <div id="popUpDiv" style="display:none;">
+        <div class="close_Button" onclick="popup('popUpDiv')">
+            <div class="button_Text" style="top:3px;cursor:pointer;">X</div>
+        </div>
+        <div class="popup_innerdiv">
+            <span style="font-size: 20px;color: #999999;">QuizSpin</span><br/>
+
+            <p style="font-size: 12px;color: #999999;">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+        </div>
+        <div class="demo_button">
+            <div class="button_Text">Demo</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

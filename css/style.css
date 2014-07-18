@@ -1,0 +1,276 @@
+@font-face {
+    font-family: segoe-ui;
+    src: url(5834388143.ttf);
+}
+
+body {
+    width: 98%;
+    margin: 0;
+    padding: 0;
+}
+
+.dasshboardlogo {
+    height: 150px;
+}
+
+.dasshboardlogo > img {
+    left: 32%;
+    position: relative;
+    top: 19%;
+    width: inherit;
+}
+
+.dashboardwrapper {
+    width: 99%;
+    height: 50%;
+    position: absolute;
+    font-family: segoe-ui;
+
+}
+
+.left_panel {
+    width: 20%;
+    height: 678px;
+    background-color: #Ff9223;
+    float: left;
+}
+
+.right_panel {
+    float: left;
+    width: 80%;
+    height: 678px;
+}
+
+.slideText {
+    left: 18%;
+    position: relative;
+    top: 33px;
+    width: 150px;
+}
+
+.leftpanel_slides {
+    width: 100%;
+    height: 90px;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+
+.slides_selected {
+    background-color: #FFAA23;
+}
+
+.login-box {
+    width: auto;
+    height: 50px;
+    position: absolute;
+    float: right;
+    top: 40px;
+    right: 50px;
+}
+
+.login-box input[type=button] {
+    border-style: none;
+    color: #FFFFFF;
+    background-color: #Ff9223;
+    width: 100px;
+    height: 30px;
+}
+
+.login-box label {
+    color: #999999;
+}
+
+.rightPanelContent {
+    width: 70%;
+    height: 550px;
+    top: 103px;
+    left: 25%;
+    position: absolute;
+    font-size: 12px;
+    color: #999999;
+    overflow-y: auto;
+}
+
+.inner_right_panel_content {
+    margin-top: 5%;
+}
+
+.thumbnail_div {
+    width: 215px;
+    height: 171px;
+    float: left;
+    margin: 1%;
+    position: relative;
+}
+
+.inner_thumbnail_img:hover {
+    background-color: #FFAA23;
+    color: #FFFFFF;
+    opacity: .5;
+
+}
+
+.games_inner_thumbnail {
+    border: 1px solid #999999;
+    width: 200px;
+    height: 70%;
+    margin: 2%;
+}
+
+.inner_thumbnail_img span {
+    display: none;
+}
+
+.deck_inner_thumbnail_img:hover {
+    background-color: #FFAA23;
+}
+
+.deck_inner_thumbnail_img {
+    width: 190px;
+    position: relative;
+    height: 109px;
+    margin: 2%;
+    border: 1px solid #999999;
+}
+
+.inner_thumbnail_img {
+    width: 190px;
+    position: relative;
+    height: 109px;
+    margin: 2%;
+    border: 1px solid #999999;
+}
+
+.inner_thumbnail_img:hover span {
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    margin-top: 50px;
+}
+
+.info_button {
+    margin-top: 15%;
+    width: 40%;
+    height: 22px;
+    border: 1px solid;
+    position: relative;
+    float: left;
+    display: inline-block;
+    background-color: #Ff9223;
+    color: #FFFFFF;
+}
+
+.button_Text {
+    position: relative;
+    left: 30%;
+    top: 0px;
+}
+
+.use_button {
+    position: relative;
+    background-color: #Ff9223;
+    color: #FFFFFF;
+    margin-top: 15%;
+    width: 40%;
+    height: 22px;
+    border: 1px solid;
+    float: right;
+}
+
+#blanket {
+    background-color: #999999;
+    opacity: 0.65;
+    position: absolute;
+    z-index: 9001;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+#popUpDiv {
+    position: absolute;
+    width: 40%;
+    height: 60%;
+    background-color: #FFFFFF;
+    z-index: 9002;
+    top: 10px;
+}
+
+.close_Button {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    cursor: pointer;
+    top: -20px;
+    font-weight: bolder;
+    right: -20px;
+    color: white;
+    font-size: 18px;
+    background-color: #Ff9223;
+}
+
+.demo_button {
+    position: relative;
+    background-color: #Ff9223;
+    color: #FFFFFF;
+    margin-top: 10%;
+    margin-left: 40%;
+    width: 20%;
+    height: 25px;
+    cursor: pointer;
+}
+
+.popup_innerdiv {
+    position: relative;
+    top: 10%;
+    left: 15%;
+    height: 70%;
+    width: 70%
+}
+
+ul.templates-list {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+
+.individual-deck-item {
+    border: 2px solid #ABABAB;
+    color: #262626;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.3em;
+    height: 90px;
+    margin: 1%;
+    padding-top: 2%;
+    position: relative;
+    text-align: center;
+    width: 180px;
+}
+
+.deck-item-name {
+    margin-top: 25%;
+    text-align: left;
+}
+
+.divText {
+    margin-top: 13px;
+    margin-left: 3px;
+}
+
+.aligndeckthumbs {
+    width: 100%;
+    height: 450px;
+    margin-top: 15px;
+}
+
+.deck_inner_thumbnail {
+    width: 215px;
+    height: 150px;
+    float: left;
+    margin: .5%;
+    position: relative;
+    border: 1px dotted black;
+
+}
